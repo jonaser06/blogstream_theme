@@ -10,11 +10,41 @@
 	<?php endif; ?>
 	
 	<?php wp_head(); ?>
+	<style>
+		.sidebar .widget {
+			border-radius: 10px !important;
+		}
+		#header{
+			border-radius: 0px;
+		}
+		#block-3 .wp-container-1 .wp-block-group__inner-container ul li{
+			border-bottom: 1px solid #ccc;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			list-style: circle;
+		}
+		#footer{
+			margin: 0px;
+			border-radius: 0px;
+		}
+		#wrapper-inner {
+				border-radius: 0px;
+		}
+		@media only screen and (max-width: 719px){
+			.sidebar-content {
+					padding: 10px !important;
+			}
+			body.home .content, body.single .content, body.archive .content, body.search .content, body.error404 .content {
+					padding-left: 10px;
+					padding-right: 10px;
+			}
+		}
+	</style>
 </head>
 
 <body <?php body_class(); ?>>
 
-<?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
+<?php #if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
 
 <a class="skip-link screen-reader-text" href="#page"><?php _e( 'Skip to content', 'blogstream' ); ?></a>
 
