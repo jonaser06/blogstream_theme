@@ -30,6 +30,7 @@
 				<?php endif; ?>
 			<?php endif; ?>
 		</div>
+		<?php /* ?>
 		<div class="entry-content">
 			<div class="entry themeform">
 				
@@ -48,6 +49,7 @@
 				
 			</div>
 		</div>
+		<?php */ ?>
 	</div>
 	
 	<div class="entry-meta group">
